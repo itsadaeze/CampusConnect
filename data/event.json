@@ -1,0 +1,20 @@
+[
+  {
+    "title": "TechFest 2025",
+    "date": "July 20, 2025",
+    "description": "A festival celebrating innovation and creativity in technology.",
+    "image": "assets/images/homepage/slider1.jpg"
+  },
+  {
+    "title": "Cultural Week",
+    "date": "August 5, 2025",
+    "description": "A week full of cultural performances, art, and traditions.",
+"image": "assets/images/homepage/slider1.jpg"
+  },
+  {
+    "title": "Sports Meet",
+    "date": "September 10, 2025",
+    "description": "Inter-college sports competitions and athletic events.",
+   "image": "assets/images/homepage/slider1.jpg"
+  }
+]

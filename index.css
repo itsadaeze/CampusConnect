@@ -117,8 +117,8 @@ body {
     color: #1e3a8a;
     padding: 2rem 1rem;
     font-weight: 500;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
     width: 100%;
 }
 
@@ -196,6 +196,119 @@ body {
     border-top: 2px solid rgba(255, 255, 255, 0.3);
     padding-top: 1rem;
 }
+
+
+
+
+
+
+/* Home Page Styles */
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #003366, #0066cc);
+  color: white;
+  height: 70vh;
+}
+
+.hero-section-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section-text p {
+  font-size: 1.2rem;
+}
+
+/* Slider */
+.slider-wrapper {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 900px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides-section {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides-section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+/* Events Section */
+.events-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.event-section-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.event-section-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.event-section-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-section-card h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.event-section-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #004d99;
+}
+
+
 
 
 
