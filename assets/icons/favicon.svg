@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#2C3E50"></circle>
+  <!-- Cap icon -->
+  <path d="M54 24c0 .8-.5 1.5-1.3 1.8L29.3 35.6C28.5 36 27.6 36 26.8 35.6L4.3 26.2C3.5 25.8 3 25 3 24s.5-1.8 1.3-2.2L26.8 12.4c.8-.4 1.7-.4 2.5 0l22.5 9.5c.8.4 1.3 1.2 1.3 2.1z" fill="#F39C12"></path>
+  <!-- Tassel -->
+  <path d="M26.5 37.5v10.5c0 1.7 1.4 3.1 3.1 3.1s3.1-1.4 3.1-3.1V39.6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+</svg>

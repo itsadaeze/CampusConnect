@@ -1,0 +1,25 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="90" viewBox="0 0 400 90" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">CampusConnect logo</title>
+  <desc id="logoDesc">A graduation cap icon and the text CampusConnect with an accent on Connect.</desc>
+
+  <!-- Background transparent -->
+  <g fill="none" fill-rule="evenodd">
+    <!-- Cap icon -->
+    <g transform="translate(8,12)">
+      <!-- cap base -->
+      <path d="M54 18c0 .8-.5 1.5-1.3 1.8L29.3 29.6C28.5 30 27.6 30 26.8 29.6L4.3 20.2C3.5 19.8 3 19 3 18s.5-1.8 1.3-2.2L26.8 6.4c.8-.4 1.7-.4 2.5 0l22.5 9.5c.8.4 1.3 1.2 1.3 2.1z" fill="#2C3E50"></path>
+      <!-- tassel -->
+      <path d="M26.5 31.5v13.5c0 1.7 1.4 3.1 3.1 3.1s3.1-1.4 3.1-3.1V33.6" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,-2)"></path>
+      <!-- tassel bead -->
+      <circle cx="33.7" cy="38.8" r="2.7" fill="#F39C12"></circle>
+    </g>
+
+    <!-- Text -->
+    <g transform="translate(90,18)">
+      <text x="0" y="28" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="28" font-weight="700" fill="#2C3E50">Campus<tspan fill="#F39C12">Connect</tspan></text>
+      <!-- small tagline -->
+      <text x="0" y="50" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="10" fill="#61707A">Your campus events hub</text>
+    </g>
+  </g>
+</svg>
