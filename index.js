@@ -8,7 +8,7 @@ function loadNabarFooterComponent(id, file, callback) {
     });
 }
 
-loadNabarFooterComponent("general-navbar", "/components/navbar.html", navbarToggle);
+loadNabarFooterComponent("general-navbar", "components/navbar.html", navbarToggle);
 loadNabarFooterComponent("general-footer", "components/footer.html");
 
 
