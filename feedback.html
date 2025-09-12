@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="CampusConnect - Discover, register, and stay updated on college events. For students, faculty, and visitors.">
+    <meta name="keywords" content="Campus Events, College, Students, Faculty, Registration, Event Calendar">
+    <meta name="author" content="CampusConnect Team">
+
+    <!-- Social sharing -->
+    <meta property="og:title" content="CampusConnect | Navbar">
+    <meta property="og:description"
+        content="Explore and register for exciting campus events. Stay connected with CampusConnect.">
+    <meta property="og:image" content="./../assets/images/logo.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://campusconnect.com">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/feedback.css">
+    <title>CampusConnect | Feedback</title>
+</head>
+
+<body>
+
+    <header id="general-navbar"> </header>
+    <!-- Feedback section -->
+    <section id="feedback" class="section">
+        <div class="feedback">
+            <h2>Feedback & Testimonials</h2>
+            <p>We value your feedback and are committed to providing the highest level of service. Please fill out the
+                form
+                below to share your experience.</p>
+            <form class="feedback-form" action="/submit-feedback" method="POST">
+                <!-- Name (optional) -->
+                <label for="name">Name <span id="feedback-opt">(Optional)</span>:</label>
+                <input type="text" id="name" name="name" placeholder="John Hardy">
+
+                <!-- Email (required) -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Xample@gmail.com">
+
+                <!-- Phone (optional) -->
+                <label for="phone">Phone Number <span id="feedback-opt">(Optional)</span>:</label>
+                <input type="text" id="phone" name="phone" placeholder="+123 456 7890">
+
+                <!-- User Type -->
+                <label for="userType">User Type:</label>
+                <select id="userType" name="userType">
+                    <option value="">-- Select User Type --</option>
+                    <option value="student">Student</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="admin">Admin</option>
+                    <option value="guest">Guest</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Service received -->
+                <label for="service">Type of Service Received:</label>
+                <select id="service" name="service">
+                    <option value="">Events</option>
+                    <option value="Academic Events">Academic Events</option>
+                    <option value="Cultural Events">Cultural Events</option>
+                    <option value="Sport Events">Sport Events</option>
+                    <option value="Departmental Events">Departmental Events</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Star rating -->
+                <div class="rating">
+                    <h3>Rate Your Experience:</h3>
+                    <div class="stars">
+                        <input type="radio" name="star" id="star1" value="1">
+                        <label for="star1">★</label>
+
+                        <input type="radio" name="star" id="star2" value="2">
+                        <label for="star2">★</label>
+
+                        <input type="radio" name="star" id="star3" value="3">
+                        <label for="star3">★</label>
+
+                        <input type="radio" name="star" id="star4" value="2">
+                        <label for="star4">★</label>
+
+                        <input type="radio" name="star" id="star5" value="1">
+                        <label for="star5">★</label>
+                    </div>
+                </div>
+
+                <!-- Comments (required) -->
+                <label for="comments">Your Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                <button type="submit" class="feedback-submit-btn">Submit Feedback</button>
+            </form>
+
+            <!-- Testimonials -->
+            <h2>Events Testimonials</h2>
+            <div class="feedback-testimonials">
+                <div class="feedback-testimonial-item">
+                    <p><strong>Student.:</strong> "I love the Cultural event! it gave us a chance to showcase our
+                        traditions and learn from others."</p>
+                </div>
+
+                <div class="feedback-testimonial-item">
+                    <p><strong>Student.:</strong> "The inter-departmetal football match was so exciting! it really
+                        brought us together outside the lecture hall."</p>
+                </div>
+
+                <div class="feedback-testimonial-item">
+                    <p><strong>Guest.:</strong> "It was such a delight to attend the department seminar. The student
+                        were well-perpared, and the discussions were insightful."
+                    </p>
+                </div>
+
+                <div class="feedback-testimonial-item">
+                    <p><strong>Faculty.:</strong> "I was impressed by the students' teamwork during the sports🏃‍♀️
+                        event. It build both discipline and friendship."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="general-footer"></footer>
+    <script src="index.js"></script>
+   
+</body>
+
+</html>
