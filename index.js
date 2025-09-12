@@ -61,7 +61,7 @@ setInterval(() => showSlide(currentSlide + 1), 5000);
 
 
 // upcoming events
-fetch("data/event.json")
+fetch("data/homeevent.json")
   .then(res => res.json())
   .then(data => {
 

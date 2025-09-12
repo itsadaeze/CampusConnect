@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "TechFest 2025",
+        "date": "2025-10-15",
+        "location": "Aptech University Auditorium",
+        "description": "Our premier tech event featuring robotics competitions, a global hackathon, and keynotes from industry leaders"
+    },
+
+    {
+        "id": 2,
+        "title": "Cultural Event",
+        "date": "2025-12-01",
+        "location": "Campus Sport Arena",
+        "description": "A week-long celebration of diversity with music nights, dance competitions, and art exhibitions"
+    },
+
+    {
+        "id": 3,
+        "title": "AI Hackathon",
+        "date": "2025-11-20",
+        "location": "Aptech University Auditorium",
+        "description": "A 12-hour coding marathon focused on solving real-world problems using artificial intelligence and machine learning"
+    },
+
+    {
+        "id": 4,
+        "title": "Inter-College Sports Meet",
+        "date": "2025-05-13",
+        "location": "Campus Sport Arena",
+        "description": "An exciting competition bringing together colleges from the region for a series of competitive sports"
+    }
+]

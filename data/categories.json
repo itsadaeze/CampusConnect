@@ -1,0 +1,27 @@
+{
+  "Academics-Events": [
+    { "image": "/assets/images/gallery/paper-presentation.jpg", "Title": "Paper Presentation" },
+    { "image": "/assets/images/gallery/Tech-talk.jpg", "Title": "Technical Quizzes" },
+    { "image": "/assets/images/gallery/drama night.jpg", "Title": "Drama Rehaearsal" },
+    { "image": "/assets/images/gallery/reserach papers.jpg", "Title": "Research topics" }
+  ],
+  "cultural-Events": [
+    { "image": "/assets/images/gallery/cultural fest.jpg", "Title": "Cultural Fest" },
+    { "image": "/assets/images/gallery/cultural event.jpg", "Title": "Local Event" },
+    { "image": "/assets/images/gallery/music fest.jpg", "Title": "Music Fest" },
+    { "image": "/assets/images/gallery/LIght Festival.jpg", "Title": "Light Fest" }
+  ],
+  "sports-Events": [
+    { "image": "/assets/images/gallery/baseball.jpg", "Title": "Baseball" },
+    { "image": "/assets/images/gallery/hockey.jpg", "Title": "Hockey" },
+    { "image": "/assets/images/gallery/soccer.jpg", "Title": "Soccer" },
+    { "image": "/assets/images/gallery/basketball.jpg", "Title": "Basketball" },
+    { "image": "/assets/images/gallery/tennis.jpg","Title": "Tennis"}
+  ],
+  "departmental-events": [
+    { "image": "/assets/images/gallery/getgother.jpg", "Title": "Alumni  Sessions" },
+    { "image": "/assets/images/gallery/DanceNight.jpg", "Title": "Free Dance Night" },
+    { "image": "/assets/images/gallery/tutoring.jpg", "Title": "Seminar Defence" },
+    { "image": "/assets/images/gallery/woodwork2.jpg", "Title": "Woodwork making" }
+  ]
+}

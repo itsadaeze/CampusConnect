@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="CampusConnect - Discover, register, and stay updated on college events. For students, faculty, and visitors.">
+    <meta name="keywords" content="Campus Events, College, Students, Faculty, Registration, Event Calendar">
+    <meta name="author" content="CampusConnect Team">
+
+    <!-- Social sharing -->
+    <meta property="og:title" content="CampusConnect | Navbar">
+    <meta property="og:description"
+        content="Explore and register for exciting campus events. Stay connected with CampusConnect.">
+    <meta property="og:image" content="./../assets/images/logo.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://campusconnect.com">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <title>CampusConnect | Gallery</title>
+</head>
+
+<body>
+
+    <header id="general-navbar"> </header>
+
+   <!-- Year  gallery dropdown -->
+  <h1  id="collegeHead">College Events Gallery</h1>
+  
+  <select id="eventYear1" name="name1">
+    <option value="">-- Select Year --</option>
+    <option value="2020-2021">2020 - 2021</option>
+    <option value="2021-2022">2021 - 2022</option>
+    <option value="2022-2023">2022 - 2023</option>
+    <option value="2023-2024">2023 - 2024</option>
+    <option value="2024-2025">2024 - 2025</option>
+  </select>
+
+  <div id="displayImage"></div>
+
+<!-- categories dropdown -->
+
+ <h1 id="collegeCategory">College Event Activities</h1>
+  
+  <select id="eventCategory">
+    <option value="">-- Select Category --</option>
+    <option value="Academics-Events">Academics Events</option>
+    <option value="cultural-Events">Cultural Events</option>
+    <option value="sports-Events">Sports Events</option>
+    <option value="departmental-events">Departmental Events</option>
+  </select>
+
+  <!-- Display Section -->
+  <div id="displayCategory"></div>
+
+    <footer id="general-footer"></footer>
+    <script src="index.js"></script>
+    <script src="/javascript/gallery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+
+#eventYear1{
+ border-radius: 10px;
+  font-size: larger;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  margin-bottom: 10.7rem;
+  padding: 0.5rem;
+}
+
+.eventBox {
+  display: inline-block;
+  margin: 0.7rem;
+  padding: 0.7rem;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: center;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.eventTitle{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.eventBox img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+   
+#eventCategory {
+  border-radius: 10px;
+  font-size: larger;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  margin-bottom: 9.7rem;
+  padding: 0.5rem;
+}
+#collegeHead{
+    margin-bottom: 2rem;
+}
+#collegeCategory{
+    margin: 7rem 0rem 2rem 0rem;
+}
+.categoryBox {
+  display: inline-block;
+  margin: 0.7rem;
+  padding: 0.7rem;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: center;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  background: white;
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.categoryBox img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+}
