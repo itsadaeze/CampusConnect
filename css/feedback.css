@@ -13,33 +13,32 @@
 }
 body{
   margin:0;
-  /* font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; */
+
   background: var(--bg);
   color:#111827;
   line-height:1.5;
   padding: 24px;
 }
 
-/* ----Section container---- */
 .section{padding: 24px 0;}
 .feedback{
   max-width: 900px;
   margin: 0 auto;
   background: var(--card);
-  border: 1px solid var(--border);
+
   border-radius: 10px;
   padding: 28px;
   box-shadow: 0 6px 18px rgba(15,23,42,0.06);
 }
 
-/* ----Headings--- */
+
 .feedback h2{
   margin-top: 0;
-  color: var(--accent);
+  color:#1e3a8a;
   font-size: 1.5rem;
 }
 
-/* ---Form layout--- */
+
 .feedback-form{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,6 +51,7 @@ body{
   font-weight:600; 
   font-size:0.95rem; 
   margin-bottom:6px;
+  color: #1e3a8a;
 }
 
 .feedback-form input[type="text"],
@@ -66,7 +66,9 @@ body{
   background: #fff;
   font-size:0.95rem;
   outline: none;
+ 
 }
+
 .feedback-form input:focus,
 .feedback-form select:focus,
 .feedback-form textarea:focus{
@@ -74,13 +76,12 @@ body{
   border-color: var(--accent);
 }
 #feedback-opt{
-    color: rgba(0, 0, 0, 0.377);
+    color: #1e3a8a;
 }
 
-/* ----Make textarea span full width--------- */
+
 .feedback-form textarea{grid-column: 1 / -1; resize: vertical;}
 
-/* ----Rating block spans full width--- */
 .rating{
   grid-column: 1 / -1;
   margin-top:8px;
@@ -90,7 +91,6 @@ body{
    font-size:1rem
   }
 
-/* -----Star styling: hide native radios and style labels------ */
 .stars{display:flex; gap:6px; align-items:center}
 .stars input[type="radio"]{position:absolute; opacity:0; pointer-events:none}
 .stars label{
@@ -106,17 +106,17 @@ body{
 .stars label:focus,
 .stars input:checked + label{ color: #f59e0b; }
 
-/* -----Ensure checked radio shows as selected — using order:
-   input#star1 + label targets the label after each input. */
+
 .stars input#star5:checked ~ label,
 .stars input:checked + label { 
   color:#f59e0b; 
 }
 
-/* ----Submit button--- */
+
 .feedback-submit-btn{
   grid-column: 1 / -1;
-  background: var(--accent);
+  
+  background: #1e3a8a;
   color:#fff;
   padding:12px 16px;
   border:none;

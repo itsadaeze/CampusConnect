@@ -1,84 +1,87 @@
-
-async function eventGallery() {
+async function loadGalleryData() {
   try {
-    const response = await fetch("/data/event.json");
-    return await response.json();
-  } catch (error) {
-    console.error("Loading error:", error);
+    const res = await fetch("/data/gallery.json");
+    return await res.json();
+  } catch (err) {
+    console.error("Error loading gallery:", err);
   }
 }
 
-//  display events
-function showEvents(years, showData) {
-  const gallery = document.getElementById("displayImage");
-  gallery.innerHTML = "";
-
-  if (years && showData[years]) {
-    showData[years].forEach(event => {
-      const eventCards = document.createElement("div");
-      eventCards.className = "eventBox";
-      eventCards.innerHTML = `
-        <img src="${event.image}" alt="${event.Title}" alt="${event.DateAndTime}" alt="${event.venue}" alt="${event.Description}">
-        <div class="eventTitle">${event.Title}</div>
-        <div class="eventDateAndTime">${event.DateAndTime}</div>
-         <div class="eventVenue">${event.Venue}</div>
-       <div class="eventDescription">${event.Description}</div>
-      `;
-      gallery.appendChild(eventCards);
-    });
-  }
-}
-
-// json
-async function loadCategories() {
-  try {
-    const response = await fetch("/data/categories.json");
-    return await response.json();
-  } catch (error) {
-    console.error("Loading error:", error);
-  }
-}
-
-// Display categories
-function showCategories(category, data) {
-  const display = document.getElementById("displayCategory");
+function renderGallery(year, category, data) {
+  const display = document.getElementById("gallery-section-display");
   display.innerHTML = "";
 
-  if (category && data[category]) {
-    data[category].forEach(item => {
-      const categoryCard = document.createElement("div");
-      categoryCard.className = "categoryBox";
-      categoryCard.innerHTML = `
-        <img src="${item.image}" alt="${item.Title}">
-        <div class="categoryTitle">${item.Title}</div>
-      `;
-      display.appendChild(categoryCard);
-    });
+  let items = [];
+
+  if (year && data[year]) {
+    if (category && data[year][category]) {
+      items = data[year][category];
+    } else {
+      items = Object.values(data[year]).flat();
+    }
+  } else {
+    
+    items = Object.values(data).flatMap((cats) => Object.values(cats).flat());
   }
+
+  if (items.length === 0) {
+    display.innerHTML = "<p>No events found for the selected filter.</p>";
+    return;
+  }
+
+  items.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "gallery-section-card";
+    card.innerHTML = `
+      <img src="${item.image}" alt="${item.Title}">
+      <div class="gallery-section-card-content">
+        <div class="gallery-section-card-title">${item.Title}</div>
+        <div class="gallery-section-card-date">${item.DateAndTime || ""}</div>
+        <div class="gallery-section-card-venue">${item.Venue || ""}</div>
+        <div class="gallery-section-card-desc">${item.Description || ""}</div>
+      </div>
+    `;
+    display.appendChild(card);
+  });
 }
 
-window.onload = async function () {
-  //  Event Year
-  const eventYear = document.getElementById("eventYear1");
-  const showData = await eventGallery();
+window.onload = async () => {
+  const data = await loadGalleryData();
 
-  eventYear.addEventListener("change", function () {
-    showEvents(this.value, showData);
+  const yearSelect = document.getElementById("galleryYear");
+  const categorySelect = document.getElementById("galleryCategory");
+
+ 
+  Object.keys(data).forEach((year) => {
+    const option = document.createElement("option");
+    option.value = year;
+    option.textContent = year;
+    yearSelect.appendChild(option);
   });
 
-  const newYear = "2024-2025"; 
-  eventYear.value = newYear;
-  showEvents(newYear, showData);
 
-  //  Categories
-  const categorySelect = document.getElementById("eventCategory");
-  const data = await loadCategories();
-
-  categorySelect.addEventListener("change", function () {
-    showCategories(this.value, data);
+  const allCategories = new Set();
+  Object.values(data).forEach((categories) => {
+    Object.keys(categories).forEach((cat) => allCategories.add(cat));
   });
 
-  const newCategory = "Academics-Events";
-  categorySelect.value = newCategory;
-  showCategories(newCategory, data);
+  allCategories.forEach((cat) => {
+    const option = document.createElement("option");
+    option.value = cat;
+    option.textContent = cat.replace(/-/g, " ");
+    categorySelect.appendChild(option);
+  });
+
+
+  const latestYear = Object.keys(data).sort().pop();
+  yearSelect.value = latestYear;
+  renderGallery(latestYear, "", data);
+
+  yearSelect.addEventListener("change", () => {
+    renderGallery(yearSelect.value, categorySelect.value, data);
+  });
+
+  categorySelect.addEventListener("change", () => {
+    renderGallery(yearSelect.value, categorySelect.value, data);
+  });
 };

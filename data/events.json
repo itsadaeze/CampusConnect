@@ -1,0 +1,70 @@
+[
+  {
+    "id": "evt-001",
+    "title": "TechFest 2025",
+    "category": "academic",
+    "department": "Computer Science",
+    "start": "2025-07-20T10:00:00",
+    "end": "2025-07-20T16:00:00",
+    "venue": "Main Auditorium",
+    "description": "Join the biggest technology festival of the year with workshops, exhibitions, and competitions.",
+   "image": "/assets/images/gallery/health day.jpg"
+  },
+  {
+    "id": "evt-002",
+    "title": "Cultural Week",
+    "category": "cultural",
+    "department": "Student Activities",
+    "start": "2025-08-05T17:00:00",
+    "end": "2025-08-10T21:00:00",
+    "venue": "Open Grounds",
+    "description": "A week full of music, dance, art shows and cultural exhibitions celebrating diversity.",
+  "image": "/assets/images/gallery/cultural event.jpg"
+  },
+  {
+    "id": "evt-003",
+    "title": "Inter-College Sports Meet",
+    "category": "sports",
+    "department": "Physical Education",
+    "start": "2025-09-20T08:00:00",
+    "end": "2025-09-20T18:00:00",
+    "venue": "Sports Complex",
+    "description": "Competitive events across athletics, team sports and track events for all departments.",
+     "image": "/assets/images/gallery/sports day.jpg"
+  },
+  {
+    "id": "evt-004",
+    "title": "AI Workshop — Hands-on",
+    "category": "academic",
+    "department": "AI Club",
+    "start": "2025-10-15T09:30:00",
+    "end": "2025-10-15T15:30:00",
+    "venue": "Lab 302",
+    "description": "A practical workshop covering ML pipelines, model evaluation, and deployment basics.",
+    "image": "/assets/images/gallery/health day.jpg"
+  },
+  {
+    "id": "evt-005",
+    "title": "Departmental Seminar: Civil Engineering",
+    "category": "departmental",
+    "department": "Civil Eng.",
+    "start": "2025-09-10T11:00:00",
+    "end": "2025-09-10T12:30:00",
+    "venue": "Seminar Hall B",
+    "description": "Faculty and students present ongoing research and small projects in civil engineering.",
+ "image": "/assets/images/gallery/hseminar.jpg"
+  },
+  {
+    "id": "evt-006",
+    "title": "24 Hour Hackathon",
+    "category": "academic",
+    "department": "Coding Society",
+    "start": "2025-11-12T09:00:00",
+    "end": "2025-11-13T09:00:00",
+    "venue": "Innovation Lab",
+    "description": "Teams build projects in 24 hours; prizes for best technical implementation and UX.",
+     "image": "/assets/images/gallery/hackathon.jpg"}
+]
+
+
+

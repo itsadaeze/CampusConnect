@@ -1,0 +1,203 @@
+:root{
+  --primary: #2C3E50;   
+  --secondary: #F39C12; 
+  --accent: #1ABC9C;    
+  --muted: #6b7280;
+  --bg: #f8fafb;
+  --card-bg: #ffffff;
+  --radius: 10px;
+  --gap: 1rem;
+  --max-width: 1200px;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--primary);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+
+.event-section-container{
+  max-width:var(--max-width);
+  margin:1.5rem auto;
+  padding:1rem;
+}
+
+/* Header */
+.event-section-header h1{
+  font-family:var(--font-heading);
+  font-size:1.9rem;
+  color:var(--primary);
+  margin-bottom:.25rem;
+}
+.event-section-header .lead{
+  color:var(--muted);
+  margin-bottom:1rem;
+}
+
+/* Controls */
+.event-section-controls{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: var(--gap);
+  align-items:end;
+  margin-bottom:1rem;
+}
+.control-row{display:flex;flex-direction:column;gap:.4rem}
+.control-input, .control-row select, .control-row input, .control-row button{
+  padding:.55rem .7rem;
+  border-radius:8px;
+  border:1px solid rgba(44,62,80,.08);
+  background:white;
+  font-size:0.95rem;
+}
+.control-input:focus{outline:2px solid rgba(51,122,255,.12);box-shadow:0 0 0 3px rgba(51,122,255,.04)}
+.toggles{display:flex;gap:.5rem}
+.toggle-btn{
+  padding:.45rem .8rem;
+  border-radius: 8px;
+  border:1px solid rgba(44,62,80,.08);
+  background:white;
+  cursor:pointer;
+}
+.toggle-btn.active{
+  background:var(--primary);
+  color:white;
+  border-color:var(--primary);
+}
+
+/* Meta row */
+.event-section-meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin: .6rem 0 1.2rem;
+}
+.event-section-count{ color:var(--muted); font-size:.95rem}
+.small-btn{
+  padding:.4rem .65rem;
+  font-size:.85rem;
+  border-radius:8px;
+  background:transparent;
+  border:1px solid rgba(44,62,80,.08);
+  cursor:pointer;
+}
+
+/* List as grid */
+.event-section-list{
+  display:grid;
+  gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Card */
+.event-section-card{
+  background:var(--card-bg);
+  border-radius: var(--radius);
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(44,62,80,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  display:flex;
+  flex-direction:column;
+}
+.event-section-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(44,62,80,0.08);
+}
+.event-section-card .thumb{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  background:#eee;
+}
+.event-section-card .card-body{
+  padding: .9rem;
+  display:flex;
+  flex-direction:column;
+  gap:.6rem;
+}
+.event-section-card h3{
+  font-family:var(--font-heading);
+  font-size:1.05rem;
+  color:var(--primary);
+}
+.event-section-meta-row{
+  display:flex;
+  gap:1rem;
+  color:var(--muted);
+  font-size:.9rem;
+  flex-wrap:wrap;
+}
+.event-section-card p.description{
+  color:#374151;
+  font-size:0.95rem;
+  margin-top:0.2rem;
+  display:-webkit-box;
+
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+/* Card actions */
+.event-section-actions{
+  display:flex;
+  gap:.6rem;
+  margin-top:auto;
+  align-items:center;
+  justify-content:space-between;
+}
+.btn-primary{
+  background:var(--secondary);
+  color:white;
+  border:none;
+  padding:.5rem .8rem;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+.btn-ghost{
+  border:1px solid rgba(44,62,80,0.08);
+  background:white;
+  padding:.45rem .65rem;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* Empty state */
+.event-section-empty{
+  text-align:center;
+  padding:2rem;
+  color:var(--muted);
+  grid-column:1/-1;
+}
+
+/* Pagination */
+.event-section-pagination{
+  display:flex;
+  justify-content:center;
+  gap:.8rem;
+  margin-top:1.2rem;
+}
+
+/* Responsive: compact */
+@media (max-width:600px){
+  .event-section-header h1{font-size:1.4rem}
+  .event-section-card .thumb{height:130px}
+  .event-section-controls{grid-template-columns:1fr}
+}
+
+/* subtle animations */
+.event-section-card,
+.control-input,
+.toggle-btn{
+  will-change:transform,opacity;
+  transition: all 180ms ease;
+}

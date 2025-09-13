@@ -1,0 +1,69 @@
+{
+  "2020-2021": {
+    "Academics-Events": [
+      {
+        "image": "/assets/images/gallery/fresher party.jpg",
+        "Title": "Freshers Party",
+        "DateAndTime": "21 July 2020, 9:30AM - 1:00PM",
+        "Venue": "Mandela Hall",
+        "Description": "A welcome celebration for new students."
+      },
+      {
+        "image": "/assets/images/gallery/sports day.jpg",
+        "Title": "Sports Day",
+        "DateAndTime": "4 Aug 2021, 1:30PM - 5:00PM",
+        "Venue": "School Stadium",
+        "Description": "An energetic day of athletics and games."
+      }
+    ],
+    "Cultural-Events": [
+      {
+        "image": "/assets/images/gallery/cultural fest.jpg",
+        "Title": "Cultural Fest",
+        "DateAndTime": "2 June 2021, 9:30AM - 1:00PM",
+        "Venue": "School Stadium",
+        "Description": "A vibrant celebration of culture."
+      }
+    ]
+  },
+  "2021-2022": {
+    "Academics-Events": [
+      {
+        "image": "/assets/images/gallery/orientation.jpg",
+        "Title": "Orientation",
+        "DateAndTime": "24 Jan 2022, 9:30AM - 1:00PM",
+        "Venue": "Mandela Hall",
+        "Description": "An introduction program to welcome new students."
+      }
+    ],
+    "Sports-Events": [
+      {
+        "image": "/assets/images/gallery/hackathon.jpg",
+        "Title": "Hackathon",
+        "DateAndTime": "29 March 2022, 9:30AM - 1:00PM",
+        "Venue": "Mandela Hall",
+        "Description": "A coding competition where students innovate."
+      }
+    ]
+  },
+  "2022-2023": {
+    "Cultural-Events": [
+      {
+        "image": "/assets/images/gallery/DanceNight.jpg",
+        "Title": "Dance Night",
+        "DateAndTime": "15 Nov 2022, 6:00PM - 10:00PM",
+        "Venue": "Open Air Theatre",
+        "Description": "Students showcase their dancing skills."
+      }
+    ],
+    "Academics-Events": [
+      {
+        "image": "/assets/images/gallery/Student week.jpg",
+        "Title": "Science Fair",
+        "DateAndTime": "5 Dec 2022, 10:00AM - 3:00PM",
+        "Venue": "Auditorium",
+        "Description": "Exhibition of science projects by students."
+      }
+    ]
+  }
+}

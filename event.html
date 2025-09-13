@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="CampusConnect - Discover, register, and stay updated on college events. For students, faculty, and visitors.">
+    <meta name="keywords" content="Campus Events, College, Students, Faculty, Registration, Event Calendar">
+    <meta name="author" content="CampusConnect Team">
+
+    <!-- Social sharing -->
+    <meta property="og:title" content="CampusConnect | Navbar">
+    <meta property="og:description"
+        content="Explore and register for exciting campus events. Stay connected with CampusConnect.">
+    <meta property="og:image" content="./../assets/images/logo.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://campusconnect.com">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/event.css">
+    <title>CampusConnect | Event</title>
+</head>
+<body>
+
+  
+<header id="general-navbar"> </header>
+
+  <main class="event-section-container" id="event-section-container" aria-labelledby="event-section-title">
+    <header class="event-section-header">
+      <h1 id="event-section-title">Event Catalog</h1>
+      <p class="lead">Browse upcoming and past events — filter by category, sort by date or name, or search by title.</p>
+    </header>
+
+
+    <section class="event-section-controls" aria-label="Event filters">
+      <div class="control-row">
+        <label for="event-section-filter-category">Category</label>
+        <select id="event-section-filter-category" class="control-input">
+          <option value="all">All Categories</option>
+        </select>
+      </div>
+
+      <div class="control-row">
+        <label for="event-section-sort">Sort by</label>
+        <select id="event-section-sort" class="control-input">
+          <option value="date-asc">Date — Upcoming First</option>
+          <option value="date-desc">Date — Most Recent First</option>
+          <option value="name-asc">Name — A to Z</option>
+          <option value="category-asc">Category — A to Z</option>
+        </select>
+      </div>
+
+      <div class="control-row">
+        <label for="event-section-search">Search</label>
+        <input id="event-section-search" class="control-input" type="search" placeholder="Search events by title or venue">
+      </div>
+
+      <div class="control-row toggles">
+        <button id="event-section-toggle-upcoming" class="toggle-btn active" aria-pressed="true">Upcoming</button>
+        <button id="event-section-toggle-past" class="toggle-btn" aria-pressed="false">Past</button>
+      </div>
+    </section>
+
+   
+    <section class="event-section-meta">
+      <div id="event-section-count" class="event-section-count" aria-live="polite">Loading events…</div>
+      <div>
+        <button id="event-section-clear" class="small-btn">Clear Filters</button>
+      </div>
+    </section>
+
+    
+    <section class="event-section-list" id="event-section-list" aria-live="polite">
+    
+    </section>
+
+   
+    <nav class="event-section-pagination" id="event-section-pagination" aria-label="Event pagination" hidden>
+      <button id="event-section-prev" class="small-btn">Prev</button>
+      <span id="event-section-pageinfo">Page 1</span>
+      <button id="event-section-next" class="small-btn">Next</button>
+    </nav>
+  </main>
+
+  
+ <footer id="general-footer"></footer>
+  <script src="/index.js"></script>
+  <script src="/javascript/event.js"></script>
+</body>
+</html>

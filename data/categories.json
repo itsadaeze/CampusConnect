@@ -16,7 +16,7 @@
     { "image": "/assets/images/gallery/hockey.jpg", "Title": "Hockey" },
     { "image": "/assets/images/gallery/soccer.jpg", "Title": "Soccer" },
     { "image": "/assets/images/gallery/basketball.jpg", "Title": "Basketball" },
-    { "image": "/assets/images/gallery/tennis.jpg","Title": "Tennis"}
+    { "image": "/assets/images/gallery/tennis.jpg", "Title": "Tennis" }
   ],
   "departmental-events": [
     { "image": "/assets/images/gallery/getgother.jpg", "Title": "Alumni  Sessions" },

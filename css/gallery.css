@@ -1,71 +1,113 @@
 
-#eventYear1{
- border-radius: 10px;
-  font-size: larger;
-  background-color: rgb(128, 128, 128);
-  color: white;
-  margin-bottom: 10.7rem;
-  padding: 0.5rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.eventBox {
-  display: inline-block;
-  margin: 0.7rem;
-  padding: 0.7rem;
-  border: 1px solid rgb(204, 204, 204);
-  text-align: center;
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
-.eventTitle{
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 10px;
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem ;
+  
+
 }
 
-.eventBox img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
+.section-wrapper{
+  padding: 4rem;
+}
+
+
+.gallery-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.gallery-filter select {
+  flex: 1 1 200px;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
   border-radius: 6px;
-}
-   
-#eventCategory {
-  border-radius: 10px;
-  font-size: larger;
-  background-color: rgb(128, 128, 128);
-  color: white;
-  margin-bottom: 9.7rem;
-  padding: 0.5rem;
-}
-#collegeHead{
-    margin-bottom: 2rem;
-}
-#collegeCategory{
-    margin: 7rem 0rem 2rem 0rem;
-}
-.categoryBox {
-  display: inline-block;
-  margin: 0.7rem;
-  padding: 0.7rem;
-  border: 1px solid rgb(204, 204, 204);
-  text-align: center;
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  background: white;
+  background: #fff;
+  transition: border 0.2s ease-in-out;
 }
 
-.categoryTitle {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 10px;
+.gallery-filter select:focus {
+  outline: none;
+  border-color: #2563eb;
 }
 
-.categoryBox img {
+
+.gallery-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-section-card {
   width: 100%;
-  height: 350px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.gallery-section-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+
+.gallery-section-card img {
+  width: 40%;
+  min-width: 200px;
   object-fit: cover;
-  border-radius: 6px;
+  height: auto;
+}
+
+
+.gallery-section-card-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.gallery-section-card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.gallery-section-card-date,
+.gallery-section-card-venue,
+.gallery-section-card-desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+
+  .section-wrapper{
+    padding: 1rem;
+  }
+  .gallery-section-card {
+    flex-direction: column;
+  }
+
+  .gallery-section-card img {
+    width: 100%;
+    height: 200px;
+  }
 }
